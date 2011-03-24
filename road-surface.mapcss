@@ -1,0 +1,35 @@
+meta {
+    title: "road surface debugger";
+}
+
+way[highway] {
+    color: gray;
+    text: surface;
+    font-size: 12;
+    text-offset: 7;
+}
+
+way[surface=asphalt], way[surface=paved] {
+	color: white;
+	width: 3;
+    text-color: white;
+}
+
+way[highway=track] {
+	dashes: 15,6;
+}
+
+way[highway=footway], way[highway=path] {
+    dashes: 4,5;
+}
+
+way[surface=unpaved] {
+	color: #cd853f;
+    text-color: yellow;
+}
+
+
+way[highway=track][!surface] {
+	color: #cd853f;
+    text-color: yellow;
+}
