@@ -4,8 +4,8 @@
 
 road-surface.mapcss - help with debugging surface on highways. It will show following:
 
-  asphalt/paved -- bold white line
-  unpaved/track -- brown line
+  paved/asphalt/concrete/cobblestone/paving_stones -- bold white line
+  all other -- brown line
 
   highway=track allways has brown color by defaults, other highways has gray color without any surface.
 

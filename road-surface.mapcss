@@ -9,7 +9,19 @@ way[highway] {
     text-offset: 7;
 }
 
-way[surface=asphalt], way[surface=paved] {
+/* by default = brown */
+way[surface] {
+	color: #cd853f;
+    text-color: yellow;
+    width: 2;
+}
+
+/* good surfaces - white */
+way[surface=paved],
+way[surface=asphalt],
+way[surface=concrete],
+way[surface=cobblestone],
+way[surface=paving_stones] {
 	color: white;
 	width: 3;
     text-color: white;
@@ -23,10 +35,6 @@ way[highway=footway], way[highway=path] {
     dashes: 4,5;
 }
 
-way[surface=unpaved] {
-	color: #cd853f;
-    text-color: yellow;
-}
 
 
 way[highway=track][!surface] {
